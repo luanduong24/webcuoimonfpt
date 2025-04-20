@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-lg-3 {
+  width: 33.33333%;
+}
+.col-4 {
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.header-logo img {
+  max-height: 50px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.drop-down > li > a {
+  text-decoration: none;
+  color: #000;
+}
+.drop-down > li:hover a {
+  color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 50px;
+  background-color: #0c86e4;
+}
+
+.home-icon {
+  padding-left: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.drop-down {
+  list-style: none;
+}
+
+.nav .drop-down {
+  background-color: #fff;
+  box-shadow: 0 0 10px gray;
+  width: max-content;
+  display: none;
+  position: absolute;
+}
+
+.home-icon:hover {
+  color: #f44336 !important;
+  cursor: pointer;
+}
+.drop-down li {
+  line-height: 35px;
+  padding-left: 20px;
+  transition: all 0.1s ease-in-out;
+  color: #000;
+}
+.nav li:hover .drop-down {
+  display: block;
+}
+
+.drop-down li:hover {
+  background-color: #f44336;
+  color: white !important;
+}
+
+.drop-down li a:hover {
+  color: #fff;
+}
+.header .nav li:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+.section1 {
+  margin-top: 110px;
+}
+
+.tieude h1 {
+  text-align: center;
+  padding-bottom: 3px;
+}
+.tieude {
+  padding-bottom: 20px;
+}
+.nganh p {
+  font-weight: bold;
+  color: orangered;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.dad-nganh {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-img {
+  width: 100%;
+  height: 170px; /* Hoặc bạn đặt theo tỷ lệ mong muốn */
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+.content-img button {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  background-color: rgba(39, 47, 84, 0.5);
+}
+
+.content-img:hover button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.content-img button:hover {
+  background-color: #fff;
+}
+
+.content-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: background 0.3s ease-in-out;
+  z-index: 1;
+}
+.content-img:hover::after {
+  background: #272f54;
+  opacity: 0.9;
+}
+.content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fancy-button {
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-4 p {
+  font-size: 14px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.col-4 p:hover {
+  color: orangered;
+}
+footer {
+  background-color: #192041;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  border-top: 7px solid orange;
+}
+
+.footer-logo img {
+  max-height: 100px;
+  width: auto;
+}
+
+.text {
+  margin: 0 30px;
+}
+
+.footer {
+  display: flex;
+  padding: 60px 0;
+}
+
+.contact-img {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+}
+
+.location {
+  margin-top: 15px;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+.footer-dad {
+  position: relative;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #0c86e4;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-end {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-end li {
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.nav-end li:hover {
+  background-color: #f44336;
+}
